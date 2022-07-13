@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Nunito Sans";
+}
+p {
+  font-size: 1.6rem;
+}
+
+/* START NAV */
+.nav {
+  padding: 2rem 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.24), rgb(0, 0, 0)),
+    url("./imgs/nav.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.nav__box {
+  position: relative;
+}
+.nav__box h2 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.searchForm {
+  margin: 1rem 0;
+}
+.searchForm input::placeholder {
+  color: rgba(0, 0, 0, 0.253);
+}
+.searchForm input {
+  width: 50rem;
+  height: 5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.customBtn {
+  padding: 1rem 2rem;
+  background-color: white;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 0.1rem solid transparent;
+}
+.customBtn:hover {
+  color: white;
+  border: 0.1rem solid white;
+  background-color: transparent;
+}
+.addressInfo {
+  position: absolute;
+  top: 75%;
+  z-index: 10000;
+  margin-top: 3rem;
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.955);
+}
+.addressInfo__box {
+  padding: 0 6rem;
+}
+.addressInfo__box:not(:last-of-type) {
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.163);
+}
+.addressInfo__box p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.384);
+}
+.addressInfo__box h3 {
+  font-weight: 900;
+}
+/* END NAV */
+/* START MAP */
+#map {
+  height: 80vh;
+  width: 100%;
+}
+/* END MAP */

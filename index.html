@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>IP Address | Tracker</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div
+          class="nav__box d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2>ip address tracker</h2>
+          <div class="searchForm">
+            <input
+              type="text"
+              placeholder="Search for any IP address or domain"
+              class="customInput"
+            />
+            <button class="customBtn">Search</button>
+          </div>
+          <div class="addressInfo d-flex">
+            <div class="addressInfo__ip addressInfo__box">
+              <p>Ip address</p>
+              <h3 id="ip"></h3>
+            </div>
+            <div class="addressInfo__location addressInfo__box">
+              <p>Location</p>
+              <h3 id="location"></h3>
+            </div>
+            <div class="addressInfo__timezone addressInfo__box">
+              <p>Timezone</p>
+              <h3 id="timezone"></h3>
+            </div>
+            <div class="addressInfo__isp addressInfo__box">
+              <p>isp</p>
+              <h3 id="isp"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div id="map"></div>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
