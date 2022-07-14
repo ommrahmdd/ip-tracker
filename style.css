@@ -44,7 +44,6 @@ p {
   width: 50rem;
   height: 5rem;
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
   font-size: 1.6rem;
   border-radius: 1rem;
   border: none;
@@ -99,3 +98,39 @@ p {
   width: 100%;
 }
 /* END MAP */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .searchForm input {
+    width: 40rem;
+    height: 3.5rem;
+  }
+  .customBtn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0;
+    display: block;
+  }
+  .addressInfo {
+    padding: 2rem 1rem;
+  }
+  .addressInfo__box {
+    padding: 0 4rem;
+  }
+  .addressInfo__box:not(:last-of-type) {
+    border: none;
+  }
+  .addressInfo__box p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .nav__box h2 {
+    font-size: 1.9rem;
+  }
+  .searchForm input {
+    width: 30rem;
+    border-radius: 2rem;
+  }
+}

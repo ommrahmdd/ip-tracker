@@ -38,30 +38,32 @@
           class="nav__box d-flex flex-column justify-content-center align-items-center"
         >
           <h2>ip address tracker</h2>
-          <div class="searchForm">
+          <div
+            class="searchForm d-flex flex-md-row flex-column align-items-center justify-content-center"
+          >
             <input
               type="text"
               placeholder="Search for any IP address or domain"
               class="customInput"
             />
-            <button class="customBtn">Search</button>
+            <button class="customBtn mx-md-1 mx-4">Search</button>
           </div>
-          <div class="addressInfo d-flex">
+          <div class="addressInfo d-flex flex-md-row flex-column">
             <div class="addressInfo__ip addressInfo__box">
               <p>Ip address</p>
-              <h3 id="ip"></h3>
+              <h3 id="ip">-</h3>
             </div>
             <div class="addressInfo__location addressInfo__box">
               <p>Location</p>
-              <h3 id="location"></h3>
+              <h3 id="location">-</h3>
             </div>
             <div class="addressInfo__timezone addressInfo__box">
               <p>Timezone</p>
-              <h3 id="timezone"></h3>
+              <h3 id="timezone">-</h3>
             </div>
             <div class="addressInfo__isp addressInfo__box">
               <p>isp</p>
-              <h3 id="isp"></h3>
+              <h3 id="isp">-</h3>
             </div>
           </div>
         </div>
